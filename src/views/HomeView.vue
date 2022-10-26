@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col h-screen ">
+  <div class="flex flex-col h-screen max-h-screen ">
     <div class="flex justify-center relative px-4 pt-10 pb-32 bg-image-pattern bg-cover">
        
       <div class="w-full max-w-screen-sm">
@@ -10,18 +10,21 @@
                  <div class="bg-arrow-icon bg-cover w-5 h-6"></div>
             </div>
         </div>
+
       </div>
+      <IpAddressInfo />
     </div>
   </div>
 </template>
 
 <script>
-
+import IpAddressInfo from '@/components/IpAddressInfo.vue';
 
 export default {
+
   name: 'HomeView',
   components: {
-    
+    IpAddressInfo
   }
 }
 </script>
