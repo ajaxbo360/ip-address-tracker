@@ -71,6 +71,7 @@ export default {
           lng: result_ip.location.lng,
         };
         console.log(search_info.value.lat)
+       
         leaflet.marker([search_info.value.lat, search_info.value.lng]).addTo(map);
         map.setView([search_info.value.lat, search_info.value.lng], 13);
       } catch (err) {
